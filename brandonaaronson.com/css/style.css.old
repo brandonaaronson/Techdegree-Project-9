@@ -1,0 +1,60 @@
+body {
+  text-align: center;
+}
+
+.icon-ba-logo-2 {
+	height: 129px;
+  width: 129px;
+  padding: 64px 123px ;
+}
+
+.grey {
+  color: #9D9FA2;
+}
+
+.black {
+  color:#000;
+}
+
+.brandon-aaronson-fro {
+  margin: 0 24px;
+  padding-bottom: 20px;
+	height: 220px;
+	width: 327px;
+	font-family: "Bebas Neue";
+	font-size: 80px;
+	line-height: 55px;
+	text-align: center;
+}
+
+.html-css-java-scr {
+	height: 102px;
+  width: 327px;
+  padding: 0 24px;
+	color: #000;
+	font-family: "Brandon Grotesque";
+	font-size: 22px;
+	letter-spacing: 0.33px;
+	line-height: 34px;
+	text-align: center;
+}
+
+.button-button-default {
+	height: 50px;
+  width: 200px;
+  background-color: #000000;
+  width: 200px;
+	color: #FFFFFF;
+	font-family: "Bebas Neue";
+	font-size: 16px;
+	letter-spacing: 1.14px;
+	line-height: 19px;
+	text-align: center;
+}
+
+.photo {
+	height: 599px;
+  width: 375px;
+  padding-top: 64px;
+  object-fit: cover;
+}

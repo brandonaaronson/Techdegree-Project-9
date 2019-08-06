@@ -1,0 +1,41 @@
+.social-contacts {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  width: 200px;
+
+  @include mq('med') {
+    margin-left: 11.25%;
+    margin-bottom: 0;
+    justify-content: space-between;
+  }
+}
+
+.email-button {
+ 	height: 50px;
+  width: 200px;
+  background-color: $button-color;
+  width: 200px;
+	font-family: "Bebas Neue";
+  font-size: 20px;
+  color: #fff;
+	letter-spacing: 1.14px;
+	line-height: 19px;
+  text-align: center;
+  margin: 0 auto;
+  border: none;  
+
+    &:hover {
+      cursor: pointer;
+    }
+  
+
+  @include mq('med') {
+    margin-left: 11.25%;
+  }
+}
+
+#port-btn {
+  border-radius: 0;
+  margin-top: 10px;
+}

@@ -1,0 +1,38 @@
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 100%;
+
+  & .container {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+.card {
+  font-family: 'Brandon Grotesque';
+  font-size: 20px;
+  border-radius: 0;
+  padding: 0;
+  max-width: 360px;
+  border-left: none;
+  border-right: none;
+  margin: 0 15px 30px;
+}
+
+.card-img-top {
+  display: block;
+  border-radius: 0;
+  max-width: 348px;
+  margin: 0 auto;
+}
+
+.card-body {
+  border-radius: 0;
+  height: 100px;
+}
+

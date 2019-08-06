@@ -1,0 +1,34 @@
+//  -------- Colors -------- //
+$button-color: #000;
+// Font colors 
+$primary-font-color: #9D9FA2;
+$secondary-font-color: #000;
+$background-color: #fff;
+
+// Layout 
+
+$max-width: 1440px;
+$max-height: 768px;
+
+// Font stacks
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('fonts/brandon_reg.otf');
+  src: url('fonts/brandon_reg-webfont.woff') format("woff");
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('fonts/BebasNeue.otf');
+  src: url('fonts/bebasneue-webfont.woff') format("woff");
+}
+
+// Breakpoints
+$breakpoints: (
+'sm'   : 375px,
+'med' : 768px,
+'lg'     : 1000px
+);
+
+// Transition time
+
+$trans-time: .5s;

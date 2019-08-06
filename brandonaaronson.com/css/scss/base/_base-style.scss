@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box; 
+ }
+ 
+html, body {
+  padding: 0;
+  @include mq('med') {
+   height: 100vh;
+  }
+}
+
+body {
+  min-height: 100%;
+  margin-top: 60px;
+
+  @include mq('med') {
+    margin-top: 0;
+  }
+}
+
+button:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
