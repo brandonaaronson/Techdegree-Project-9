@@ -1,0 +1,200 @@
+html {
+  height: 100%;
+  background-color: #f8f8f8;
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Hind Madurai', sans-serif;
+  position: relative;
+}
+
+@media (min-width: 361px) {
+  body {
+    margin: 0 auto;
+  }
+}
+
+img {
+  border-radius: 50%;
+}
+
+.container {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 710px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+
+.grid-container {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1000px;
+}
+
+@media (min-width: 361px) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 360px;
+        grid-template-columns: 360px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    -ms-grid-columns: (340px)[2];
+        grid-template-columns: repeat(2, 340px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-container {
+    -ms-grid-columns: (340px)[3];
+        grid-template-columns: repeat(3, 340px);
+  }
+}
+
+footer {
+  display: none;
+  height: 30px;
+  width: 50px;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding-top: 30px;
+  margin: 0 15px;
+}
+
+header h1 {
+  font-size: 19px;
+  margin: 0 0 20px 15px;
+  color: #5f5f5f;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  header {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-top: 30px;
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+  }
+}
+
+.email {
+  text-transform: lowercase;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 360px;
+  border-top: 1px solid #64646466;
+  padding: 20px 0;
+  background-color: #ffffff;
+  line-height: 10px;
+}
+
+.card img {
+  margin-left: 20px;
+  height: 100px;
+  width: 100px;
+}
+
+@media (min-width: 361px) {
+  .card {
+    border: 1px solid #64646466;
+    -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+    cursor: pointer;
+  }
+}
+
+.user-info {
+  margin: 10px auto 0 20px;
+  font-size: 12px;
+  vertical-align: middle;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.user-info p:last-of-type {
+  margin-bottom: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  min-height: 100%;
+}
+
+.modal {
+  width: 220px;
+  position: fixed;
+  text-align: center;
+  top: 250px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 400px;
+    right: 35.555%;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal-content {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.hidden {
+  display: none;
+  opacity: 100%;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+/*# sourceMappingURL=style.css.map */
