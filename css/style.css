@@ -280,12 +280,12 @@ button:focus {
 
 .overlay-close {
   color: #fff;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 10;
+  text-align: right;
+  margin: 20px 20px 20px auto;
+  z-index: 15;
   font-size: 20px;
   cursor: pointer;
+  width: 20px;
 }
 
 .card {
@@ -383,8 +383,8 @@ nav {
 .instagram {
   height: 60px;
   width: 60px;
-  -webkit-transition-duration: fill .5s;
-          transition-duration: fill .5s;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 .twitter svg,
