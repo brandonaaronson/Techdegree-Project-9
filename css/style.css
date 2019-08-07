@@ -263,6 +263,12 @@ button:focus {
   padding: 0;
 }
 
+.overlay .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .overlay ::-webkit-scrollbar {
   display: none;
 }
@@ -279,13 +285,21 @@ button:focus {
 }
 
 .overlay-close {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: #fff;
-  text-align: right;
-  margin: 20px 20px 20px auto;
+  text-align: center;
+  margin: 20px 20px 20px;
   z-index: 15;
   font-size: 20px;
   cursor: pointer;
   width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  line-height: 20px;
 }
 
 .card {
@@ -315,6 +329,19 @@ button:focus {
   border-radius: 0;
   height: 70px;
   border-top: 1px solid #9D9FA2;
+}
+
+.overlay-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects {
+  margin-top: 20px;
 }
 
 nav {
