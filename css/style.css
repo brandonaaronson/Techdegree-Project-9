@@ -125,11 +125,11 @@ button:focus {
   padding: 0 5px;
   margin-left: 25px;
   font-family: 'Brandon Grotesque';
+  z-index: initial;
 }
 
 .container {
   background-color: #fff;
-  margin-top: 20px;
   max-width: 1440px;
 }
 
@@ -152,7 +152,7 @@ button:focus {
   margin: 0 auto;
   padding-bottom: 20px;
   height: 220px;
-  width: 327px;
+  width: 320px;
   font-family: "Bebas Neue";
   font-size: 80px;
   line-height: 55px;
@@ -198,11 +198,11 @@ button:focus {
 
 .languages {
   height: 102px;
-  width: 327px;
+  width: 320px;
   margin: 39px auto 64px;
   color: #000;
   font-family: "Brandon Grotesque";
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 0.33px;
   line-height: 34px;
   text-align: center;
@@ -247,8 +247,9 @@ button:focus {
   padding: 0;
 }
 
-#overlay {
+.overlay {
   position: absolute;
+  z-index: 3;
   top: 0;
   left: 0;
   right: 0;
@@ -257,8 +258,13 @@ button:focus {
   min-height: 100%;
 }
 
-#overlay .container {
+.overlay .container {
   background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+
+.overlay ::-webkit-scrollbar {
+  display: none;
 }
 
 #overlay-container {
@@ -268,8 +274,18 @@ button:focus {
 
 @media (min-width: 768px) {
   #overlay-container {
-    overflow-y: initial;
+    overflow-y: hidden;
   }
+}
+
+.overlay-close {
+  color: #fff;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .card {
@@ -277,22 +293,28 @@ button:focus {
   font-size: 16px;
   border-radius: 0;
   padding: 0;
-  max-width: 360px;
+  width: 315px;
+  height: 345px;
   border-left: none;
   border-right: none;
   margin: 0 15px 30px;
+  line-height: 65px;
 }
 
 .card-img-top {
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0;
   max-width: 348px;
+  height: 237px;
   margin: 0 auto;
 }
 
 .card-body {
   border-radius: 0;
   height: 70px;
+  border-top: 1px solid #9D9FA2;
 }
 
 nav {
@@ -304,9 +326,8 @@ nav {
   padding: 8px 0;
   max-width: 1440px;
   margin: 0 auto;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .navbar-toggler {
@@ -315,7 +336,9 @@ nav {
   position: fixed;
   top: 10px;
   left: 10px;
-  z-index: 10;
+  z-index: 2;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .navbar-nav {
@@ -332,7 +355,7 @@ nav {
 }
 
 .ba-logo {
-  z-index: 10;
+  z-index: 2;
   width: 129px;
   height: 129px;
   margin: 20px auto 64px;
