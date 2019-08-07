@@ -1,9 +1,7 @@
 const portfolio = document.querySelector('#port-btn');
-const textBox = document.querySelector('#text-box');
-const logo = document.querySelector('.ba-logo')
-const portfolioBtn = document.querySelector('#port-btn')
+const portfolioBtn = document.querySelector('#port-btn');
 const overlay = document.querySelector('.overlay');
-const overlayClose = document.querySelector('.overlay-close')
+
 
 // -- open overlay w/ nav button -- //
 
