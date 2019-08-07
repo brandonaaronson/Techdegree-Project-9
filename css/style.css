@@ -53,7 +53,7 @@ button:focus {
 
 @media (min-width: 768px) {
   .photo {
-    height: 100%;
+    height: 100vh;
     max-height: 1365px;
   }
 }
@@ -118,7 +118,13 @@ button:focus {
 
 #port-btn {
   border-radius: 0;
-  margin-top: 10px;
+  background-color: #9D9FA2;
+  border: none;
+  margin-top: 13px;
+  height: 25px;
+  padding: 0 5px;
+  margin-left: 25px;
+  font-family: 'Brandon Grotesque';
 }
 
 .container {
@@ -156,9 +162,9 @@ button:focus {
 @media (min-width: 768px) {
   .main-header {
     text-align: left;
-    width: 73%;
+    width: 300px;
     height: 220px;
-    margin-top: 137px;
+    margin-top: 10vh;
     margin-left: 11.25%;
     padding-bottom: 0;
     font-size: 70px;
@@ -171,8 +177,22 @@ button:focus {
   .main-header {
     font-size: 100px;
     line-height: 70px;
+    width: 73%;
     height: 280px;
     margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-height: 700px) {
+  .main-header {
+    width: 300px;
+    height: 220px;
+    margin-top: 10vh;
+    margin-left: 11.25%;
+    padding-bottom: 0;
+    font-size: 70px;
+    line-height: 48px;
+    max-width: 420px;
   }
 }
 
@@ -209,6 +229,20 @@ button:focus {
   }
 }
 
+@media (min-width: 768px) and (max-height: 700px) {
+  .languages {
+    text-align: left;
+    width: 60%;
+    max-width: 350px;
+    margin-left: 11.25%;
+    font-size: 18px;
+    letter-spacing: .3px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+}
+
 .col-md-6 {
   padding: 0;
 }
@@ -227,9 +261,20 @@ button:focus {
   background-color: rgba(0, 0, 0, 0);
 }
 
+#overlay-container {
+  overflow-y: auto;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  #overlay-container {
+    overflow-y: initial;
+  }
+}
+
 .card {
   font-family: 'Brandon Grotesque';
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 0;
   padding: 0;
   max-width: 360px;
@@ -247,7 +292,7 @@ button:focus {
 
 .card-body {
   border-radius: 0;
-  height: 100px;
+  height: 70px;
 }
 
 nav {
@@ -259,11 +304,18 @@ nav {
   padding: 8px 0;
   max-width: 1440px;
   margin: 0 auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .navbar-toggler {
   border: none;
-  margin-left: 20px;
+  margin-top: 3px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
 }
 
 .navbar-nav {
@@ -275,6 +327,7 @@ nav {
 }
 
 .nav-item {
+  margin-left: 25px;
   width: 80%;
 }
 
@@ -282,7 +335,7 @@ nav {
   z-index: 10;
   width: 129px;
   height: 129px;
-  margin: 0 auto 64px;
+  margin: 20px auto 64px;
 }
 
 @media (min-width: 768px) {

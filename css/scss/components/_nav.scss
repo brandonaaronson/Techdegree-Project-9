@@ -7,11 +7,16 @@ nav {
   padding: 8px 0;
   max-width: 1440px;
   margin:0 auto;
+  align-items: flex-start;
 }
 
 .navbar-toggler {
   border: none;
-  margin-left: 20px;
+  margin-top: 3px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
 }
 
 .navbar-nav {
@@ -23,5 +28,8 @@ nav {
 }
 
 .nav-item {
+  margin-left: 25px;
   width: 80%;
+  @include mq('med') {
+  }
 }

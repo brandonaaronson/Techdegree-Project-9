@@ -23,11 +23,18 @@ $max-height: 768px;
 }
 
 // Breakpoints
-$breakpoints: (
+$breakpoints-width: (
 'sm'   : 375px,
-'med' : 768px,
-'lg'     : 1000px
+'med'  : 768px,
+'lg'   : 1000px,
+'xl'   : 1200px
 );
+
+$breakpoints-height: (
+'sm'  : 1px,
+'med' : 610px,
+'lg'  : 700px
+); 
 
 // Transition time
 

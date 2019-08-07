@@ -13,9 +13,18 @@
   }
 }
 
+#overlay-container {
+  overflow-y: auto;
+  height: 100%;
+
+  @include mq('med'){
+    overflow-y: initial;
+  }
+}
+
 .card {
   font-family: 'Brandon Grotesque';
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 0;
   padding: 0;
   max-width: 360px;
@@ -33,6 +42,6 @@
 
 .card-body {
   border-radius: 0;
-  height: 100px;
+  height: 70px;
 }
 

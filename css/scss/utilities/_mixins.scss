@@ -1,0 +1,50 @@
+
+// Font Face
+
+@mixin center($w){
+    width: $w;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+// Flexbox
+
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null) {
+    display: $disp;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+  }  
+
+// Media Queries
+
+@mixin mq($break) {
+    $value: map-get($breakpoints-width, $break);
+    
+    @media (min-width: $value)  {
+      @content;
+    }
+  }
+
+@mixin mqh($break) {
+    $value: map-get($breakpoints-height, $break);
+  
+    @media (max-height: $value) {
+      @content;
+    }
+  }
+
+  @mixin mqwh($break-width, $break-height) {
+    $value1: map-get(
+      $breakpoints-width, $break-width);
+    $value2: map-get(
+      $breakpoints-height, $break-height);
+  
+    @media (min-width: $value1) and (max-height: $value2) {
+      @content;
+    }
+  }
